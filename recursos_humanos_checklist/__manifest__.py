@@ -20,8 +20,7 @@
     'depends': [
         'base',
         'validacion_checklist',
-        'generar_folios',
-        'hr',
+        'hr'
     ],
     'data': [
         'views/datos_requerimientos_solicitud.xml',
