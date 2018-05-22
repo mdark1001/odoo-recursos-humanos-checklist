@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="datos_requerimientos_solicitud_action_form" model="ir.ui.view">
+            <field name="name">Perfiles</field>
+            <field name="model">rhs4g.requerimientos_solicitud</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <div class="oe_button_box" name="button_box">
+                           <!-- <button class="oe_inline oe_stat_button" type="action"
+                                    icon="fa-list-ul"
+                            >
+                            </button> -->
+                        </div>
+                        <br/>
+                        <!-- <group col="2" colspan="2"> -->
+
+                        <div class="oe_title">
+                            <label for="name">Ingrese el nombre del perfil</label>
+                            <h2>
+                                <field name="name"/>
+                            </h2>
+                        </div>
+                        <br/>
+                        <label for="code">Clave del perfil</label>
+                        <field name="code"/>
+                        <br/>
+                        <label for="description">Ingrese una descripción</label>
+                        <field name="description"/>
+
+                        <field name="numero_dias_plazo_entrega" invisible="True"/>
+                        <!--</group> -->
+                        <notebook>
+                            <page string="Habilidades/Capacidades">
+                                <field name="check_list">
+                                    <tree  open="false">
+                                        <field name="prioridad_lista"/>
+                                        <field name="es_requerido"/>
+                                        <field name="name"/>
+                                        <field name="porcentaje"/>
+
+                                    </tree>
+                                    <form>
+                                        <sheet>
+                                            <group col="2" colspan="2">
+                                                <field name="name"/>
+                                                <field name="description"/>
+                                                <field name="es_requerido"/>
+                                                <field name="prioridad_lista"/>
+                                                <field name="porcentaje"/>
+                                            </group>
+                                        </sheet>
+                                    </form>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+
+                </form>
+            </field>
+        </record>
+
+        <record id="datos_requerimientos_solicitud_action" model="ir.actions.act_window">
+            <field name="name">Perfiles</field>
+            <field name="res_model">rhs4g.requerimientos_solicitud</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">Agregar primer registro</p>
+            </field>
+        </record>
+
+    </data>
+</odoo>

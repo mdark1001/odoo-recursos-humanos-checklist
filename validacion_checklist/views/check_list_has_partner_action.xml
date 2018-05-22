@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <record id="check_list_has_partner_action_window_form" model="ir.ui.view">
+            <field name="name">Alumnos requisitos</field>
+            <field name="model">ops4g.check_list_has_partner</field>
+            <field name="arch" type="xml">
+                <form string="Aregar requisitos">
+                    <sheet>
+                        <!--<group>
+                            <field name="student_id"/>
+                        </group> -->
+                        <group>
+                            <field name="name"></field>
+                            <field name="items_list">
+                                <tree editable="bottom">
+                                    <field name="documento_id"/>
+                                    <field name="original_entregado"/>
+                                    <field name="copia_entregada"/>
+                                </tree>
+                            </field>
+                            <field name="lista_completa"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="check_list_has_partner_action_window_tree" model="ir.ui.view">
+            <field name="name">Alumnos requisitos</field>
+            <field name="model">ops4g.check_list_has_partner</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <!--     <field name="student_id"/> -->
+                    <field name="name"></field>
+                    <field name="items_list"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="check_list_has_partner_action_window" model="ir.actions.act_window">
+            <field name="name">Alumnos requisitos</field>
+            <field name="res_model">ops4g.check_list_has_partner</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">Agregar primer registro</p>
+            </field>
+        </record>
+    </data>
+</odoo>

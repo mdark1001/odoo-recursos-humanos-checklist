@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+          <delete model="ir.ui.menu" id="validacion_checklist.main_upp_check_list_model_item_requerimientos"/>
+
+        <menuitem id="main_rh_job_requerimientos" name="Perfiles recursos humanos"
+                  parent="validacion_checklist.main_upp_check_list_model"
+                  action="datos_requerimientos_solicitud_action"/>
+        <menuitem id="main_rh_job_requerimientos_habilidad" name="Habilidades"
+                  parent="validacion_checklist.main_upp_check_list_model"
+                  action="datos_habildiad_requerimiento_solicitud_action"/>
+
+    </data>
+</odoo>

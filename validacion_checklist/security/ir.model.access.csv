@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_ops4g_check_list_has_partner,access_ops4g_check_list_has_partner,model_ops4g_check_list_has_partner,,1,1,1,1
+access_ops4g_event_model,access_ops4g_event_model,model_ops4g_event_model,,1,1,1,1
+access_ops4g_check_list_event,access_ops4g_check_list_event,model_ops4g_check_list_event,,1,1,1,1
+access_ops4g_check_entregado,access_ops4g_check_entregado,model_ops4g_check_entregado,,1,1,1,1

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <record id="data_event_model_1" model="ops4g.event_model">
+            <field name="name">Inscripción Nacionales</field>
+            <field name="description">Proceso de instripción</field>
+            <field name="code">inscripcionnacionales</field>
+            <field name="numero_dias_plazo_entrega">2</field>
+        </record>
+
+        <record id="data_event_model_2" model="ops4g.event_model">
+            <field name="name">Reinscripción</field>
+            <field name="description">Proceso de Reinscripción</field>
+            <field name="code">reinscripcion</field>
+            <field name="numero_dias_plazo_entrega">2</field>
+        </record>
+
+        <record id="data_event_model_3" model="ops4g.event_model">
+            <field name="name">Estadias/Prácticas</field>
+            <field name="description">Prácticas o estadias profesionales</field>
+            <field name="code">estadias_practicas</field>
+            <field name="numero_dias_plazo_entrega">2</field>
+        </record>
+
+        <record id="data_event_model_4" model="ops4g.event_model">
+            <field name="name">Titulación</field>
+            <field name="description">Proceso de Titulación</field>
+            <field name="code">titulacion</field>
+            <field name="numero_dias_plazo_entrega">2</field>
+        </record>
+
+        <record id="data_check_list_event_1" model="ops4g.check_list_event">
+            <field name="name">CURP</field>
+            <field name="description">CURP</field>
+            <field name="es_requerido">True</field>
+            <field name="prioridad_lista">1</field>
+            <!--<field name="x_check_has_list_ids" ref="data_event_model_1"/> -->
+        </record>
+        <record id="data_check_list_event_2" model="ops4g.check_list_event">
+            <field name="name">Acta nacimiento</field>
+            <field name="description">Acta de nacimiento</field>
+            <field name="es_requerido">True</field>
+            <field name="prioridad_lista">2</field>
+            <!--<field name="x_check_has_list_ids" ref="data_event_model_1"/> -->
+        </record>
+        <record id="data_check_list_event_3" model="ops4g.check_list_event">
+            <field name="name">Antecedentes no penales</field>
+            <field name="description">Carta de antecedentes no penales</field>
+            <field name="es_requerido">True</field>
+            <field name="prioridad_lista">3</field>
+            <!--<field name="x_check_has_list_ids" ref="data_event_model_1"/> -->
+        </record>
+        <record id="data_check_list_event_4" model="ops4g.check_list_event">
+            <field name="name">Certificado médico</field>
+            <field name="description">Certificado médico</field>
+            <field name="es_requerido">True</field>
+            <field name="prioridad_lista">4</field>
+            <!--<field name="x_check_has_list_ids" ref="data_event_model_1"/> -->
+        </record>
+        <record id="data_check_list_event_5" model="ops4g.check_list_event">
+            <field name="name">Certificado dental</field>
+            <field name="description">Certificado dental</field>
+            <field name="es_requerido">True</field>
+            <field name="prioridad_lista">5</field>
+            <!--<field name="x_check_has_list_ids" ref="data_event_model_1"/> -->
+        </record>
+        <record id="data_check_list_event_6" model="ops4g.check_list_event">
+            <field name="name">Comprobante de pago</field>
+            <field name="description">Comprobante de pago</field>
+            <field name="es_requerido">True</field>
+            <field name="prioridad_lista">6</field>
+            <!--<field name="x_check_has_list_ids" ref="data_event_model_1"/> -->
+        </record>
+        <record id="data_check_list_event_7" model="ops4g.check_list_event">
+            <field name="name">Certificado de preparatoria</field>
+            <field name="description">Certificado de preparatoria</field>
+            <field name="es_requerido">True</field>
+            <field name="prioridad_lista">7</field>
+            <!--<field name="x_check_has_list_ids" ref="data_event_model_1"/> -->
+        </record>
+          <record id="data_check_list_event_8" model="ops4g.check_list_event">
+            <field name="name">Carga académica</field>
+            <field name="description">Realizar carga académica</field>
+            <field name="es_requerido">True</field>
+            <field name="prioridad_lista">8</field>
+            <!--<field name="x_check_has_list_ids" ref="data_event_model_1"/> -->
+        </record>
+           <record id="data_check_list_event_9" model="ops4g.check_list_event">
+            <field name="name">3 fotografía</field>
+            <field name="description">Fotografías 3 x 4. Tamaño infantil</field>
+            <field name="es_requerido">True</field>
+            <field name="prioridad_lista">9</field>
+            <!--<field name="x_check_has_list_ids" ref="data_event_model_1"/> -->
+        </record>
+
+        <record id="data_event_model_10" model="ops4g.event_model">
+            <field name="name">Inscripción Extranjeros</field>
+            <field name="description">Proceso de inscripción</field>
+            <field name="code">inscripcionextranjeros</field>
+            <field name="numero_dias_plazo_entrega">2</field>
+        </record>
+
+    </data>
+</odoo>

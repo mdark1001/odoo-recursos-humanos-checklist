@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <menuitem id="main_upp_check_list_model" name="Requerimientos"/>
+
+
+        <menuitem id="main_upp_check_list_model_item_requerimientos" name="Lista de requerimientos"
+                  parent="main_upp_check_list_model" action="check_list_action_window"/>
+        <!-- Solo para pruebas de concepto
+        <menuitem id="main_upp_check_list_has_partner_action_window" name="Alumnos"
+                  parent="main_upp_check_list_model" action="check_list_has_partner_action_window"/>
+        -->
+    </data>
+</odoo>
